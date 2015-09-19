@@ -1,0 +1,30 @@
+Compilacion:
+
+mkdir build
+cd build
+cmake ../
+make
+
+
+Uso:
+
+muzip <image-in> [image-out] [p] [q] [alfa]
+
+
+Si la imagen de entrada tiene extension .ppm, se hara una compresion.
+Si por el contrario la extension es .mz, se hara una descompresion.
+
+Si no se especifica un archivo de salida, este sera el mismo que el de entrada pero con
+la extension cambiada.
+
+Por ejemplo, si ejecutamos:
+
+muzip imagen.ppm
+
+El archivo comprimido sera imagen.mz.
+
+Si ejecutamos:
+
+muzip imagen.mz
+
+El archivo de salida sera imagen.ppm.
